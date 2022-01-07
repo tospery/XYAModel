@@ -1,0 +1,16 @@
+PODS:
+  - XYAModel (0.1.0)
+
+DEPENDENCIES:
+  - XYAModel (from `../`)
+
+EXTERNAL SOURCES:
+  XYAModel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XYAModel: ff88f4e621ddd20c0c16258d6af84e1cc5243370
+
+PODFILE CHECKSUM: e9b3d45a97fc997e7ebd3729e3260ec1295679b9
+
+COCOAPODS: 1.11.2

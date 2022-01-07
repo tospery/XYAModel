@@ -1,0 +1,8 @@
+use_frameworks!
+
+platform :ios, '11.0'
+
+target 'XYAModel_Example' do
+  pod 'XYAModel', :path => '../'
+
+end

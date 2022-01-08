@@ -1,16 +1,54 @@
 PODS:
-  - XYAModel (0.1.0)
+  - CocoaLumberjack (3.7.2):
+    - CocoaLumberjack/Core (= 3.7.2)
+  - CocoaLumberjack/Core (3.7.2)
+  - libextobjc/EXTConcreteProtocol (0.6):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.6)
+  - Mantle-JX (2.2.0-v4):
+    - Mantle-JX/extobjc (= 2.2.0-v4)
+  - Mantle-JX/extobjc (2.2.0-v4)
+  - OCFrame/OCFCore (1.1.4):
+    - CocoaLumberjack (= 3.7.2)
+    - libextobjc/EXTConcreteProtocol (= 0.6)
+    - Mantle-JX (= 2.2.0-v4)
+    - PINCache (= 3.0.3)
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
+    - PINCache/Core
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.1)
+  - XYAModel (0.0.1):
+    - OCFrame/OCFCore (= 1.1.4)
 
 DEPENDENCIES:
   - XYAModel (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CocoaLumberjack
+    - libextobjc
+    - Mantle-JX
+    - OCFrame
+    - PINCache
+    - PINOperation
 
 EXTERNAL SOURCES:
   XYAModel:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XYAModel: ff88f4e621ddd20c0c16258d6af84e1cc5243370
+  CocoaLumberjack: b7e05132ff94f6ae4dfa9d5bce9141893a21d9da
+  libextobjc: aed8b7d2b07f511c1a7ecaacb33ea03e327c69b7
+  Mantle-JX: 4c3074ba4b052bdfe662c9b26ac08d82feae02d5
+  OCFrame: b3d9725e39a5205a8e324158e0d8526c83e221d9
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
+  XYAModel: 579831782c6794503290516433d3936062c5084c
 
-PODFILE CHECKSUM: e9b3d45a97fc997e7ebd3729e3260ec1295679b9
+PODFILE CHECKSUM: 0ad4176728522f14d59102764b760591a669a92e
 
 COCOAPODS: 1.11.2

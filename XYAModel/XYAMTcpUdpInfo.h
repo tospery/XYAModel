@@ -5,12 +5,20 @@
 //  Created by liaoya on 2022/1/7.
 //
 
-#import <Foundation/Foundation.h>
+#import <OCFrame/OCFCore.h>
 
-NS_ASSUME_NONNULL_BEGIN
+typedef NS_ENUM(NSInteger, XYAMTcpUdpType){
+    XYAMTcpUdpTypeUnknown,
+    XYAMTcpUdpTypeTCP,
+    XYAMTcpUdpTypeUDP
+};
 
-@interface XYAMTcpUdpInfo : NSObject
+@interface XYAMTcpUdpInfo : OCFModel
+@property (nonatomic, assign, readonly) NSInteger gameid;
+@property (nonatomic, assign, readonly) NSInteger areaid;
+@property (nonatomic, assign, readonly) NSInteger netmask;
+@property (nonatomic, assign, readonly) XYAMTcpUdpType protocol;
+@property (nonatomic, strong, readonly) NSString *port;
 
 @end
 
-NS_ASSUME_NONNULL_END

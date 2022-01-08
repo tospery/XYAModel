@@ -5,7 +5,7 @@
 //  Created by 杨建祥 on 2022/1/8.
 //
 
-#import <OCFrame/OCFrame.h>
+#import <OCFrame/OCFCore.h>
 
 @interface XYAMLineNode : OCFModel
 @property (nonatomic, assign, readonly) NSInteger fLineCata;

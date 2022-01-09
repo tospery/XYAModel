@@ -22,11 +22,22 @@
 #define kAppGroupIdentifier                         (@"group.com.xunyou.accelerator")
 #define kWormholeOptionalDirectory                  (@"communication")
 
-#define kLogMessage                                 (@"Log")
-#define kErrorMessage                               (@"Error")
-#define kProxyMessage                               (@"Proxy")
-#define kP2PDataMessage                             (@"P2PData")
-#define kGameServerDataMessage                      (@"GameServerData")
+#define kLogMessage                                 (@"VPN-Log")
+#define kErrorMessage                               (@"VPN-Error")
+#define kProxyMessage                               (@"VPN-Proxy")
+#define kP2PDataMessage                             (@"VPN-P2PData")
+#define kGameServerDataMessage                      (@"VPN-GameServerData")
+
+typedef NS_ENUM(NSInteger, VPNErrorCode){
+    VPNErrorCodeMasterConnect = 50000,
+    VPNErrorCodeMasterDisconnect,
+    VPNErrorCodeMasterHello,
+    VPNErrorCodeMasterAuthorize,
+    VPNErrorCodeMasterSecondary,
+    VPNErrorCodeMasterException,
+    VPNErrorCodeMasterInterrupt,
+    VPNErrorCodeMasterHeartbeat
+};
 
 #import "XYAMAcceleration.h"
 #import "XYAMLineNode.h"
